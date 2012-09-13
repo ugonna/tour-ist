@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<include layout="@layout/actionbar" />
+	<fragment android:name="com.ugo.android.tourmate.ui.DashboardFragment"
+        android:id="@+id/fragment_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+     
+	<SlidingDrawer android:id="@+id/recommend_sliding_drawer" 
+     	android:layout_width="match_parent"
+     	android:layout_height="wrap_content"
+     	android:handle="@+id/recommend_handle"
+     	android:content="@+id/recommend_list_content"
+     	android:orientation="vertical"
+     	android:allowSingleTap="false"
+     	android:contentDescription="@string/home_sliding_drawer_content_desc" >
+     	
+     	<fragment android:name="com.ugo.android.tourmate.ui.RecommendationBarFragment"
+     		android:id="@id/recommend_handle"
+     		android:layout_width="match_parent"
+         	android:layout_height="@dimen/recommend_bar_height" />
+         	
+        <fragment android:name="com.ugo.android.tourmate.ui.AboutFragment"
+        	android:id="@id/recommend_list_content"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1" />
+     </SlidingDrawer>
+     
+</FrameLayout>

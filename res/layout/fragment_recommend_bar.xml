@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/recommend_bar_root" style="@style/RecommendationBar">
+
+	<ViewFlipper android:id="@+id/recommendationFlipper"
+		android:layout_width="wrap_content" android:layout_height="match_parent"
+		android:layout_gravity="center">
+
+		<include layout="@layout/poi_recommend_view_loading"
+			android:id="@+id/recommendBarLoading" />
+			
+		<include layout="@layout/poi_recommend_view" android:id="@+id/firstRecommend" />
+
+		<include layout="@layout/poi_recommend_view" android:id="@+id/secondRecommend" />
+
+		<include layout="@layout/poi_recommend_view" android:id="@+id/thirdRecommend" />
+		
+		<include layout="@layout/poi_recommend_view" android:id="@+id/fourthRecommend" />
+		
+		<include layout="@layout/poi_recommend_view" android:id="@+id/fifthRecommend" />
+		
+	</ViewFlipper>
+
+</LinearLayout>

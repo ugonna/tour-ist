@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Tour.ist</string>
+    <string name="camera_view_name">AR View</string>
+    <string name="explore_view_name">Explore</string>
+    <string name="intended_view_name">Marked Places</string>
+    <string name="visited_view_name">Visited Places</string>
+    <string name="poi_detail_view_name">Place Details</string>
+    <string name="poi_map_view_name">Map View</string>
+    
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="description_ar">Enter AR Explorer mode</string>
+    <string name="description_map">Enter Map mode</string>
+    <string name="description_add_poi">Add this spot to watch list</string>
+    <string name="description_remove_poi">Remove from watch list</string>
+    <string name="description_logo">Click to go to Tour.IST home</string>
+    
+    <string name="home_sliding_drawer_content_desc">One recommendation</string>
+    <string name="recommend_bar_loading">Hold on a bit...</string>
+    <string name="recommend_bar_loading_sub">Loading points-of-interest around</string>
+    
+    <string name="map_current_location_marker_title">Your current location</string>
+    <string name="map_current_location_marker_snippet">This is where you are</string>
+    
+    <string name="home_btn_explore">Explore Around</string>
+    <string name="home_btn_places">Marked Places</string>
+    <string name="home_btn_history">Visit History</string>
+    <string name="home_btn_settings">Preferences</string>
+    
+    <string name="poi_list_fetching_items_explore">Looking for spots around you...</string>
+    <string name="poi_list_fetching_items_intended">Fetching spots you want to see...</string>
+    <string name="poi_list_fetching_items_visited">Fetching spots you have been to...</string>
+    <string name="poi_list_no_items">Sorry. Cannot get anything.</string>
+    <string name="poi_list_no_marked_places">You haven\'t marked anywhere to visit yet.</string>
+    <string name="poi_list_no_visited_places">You haven\'t visited anywhere yet.</string>
+    
+    <string name="poi_list_header_fine_tune">Fine tuning location...</string>
+    <string name="poi_list_header_using_coarse">Using rough location</string>
+    <string name="poi_list_header_obtained">Fine location obtained</string>
+    
+    <string name="toast_no_coarse_provider">Cannot get quick location.\nattempting to use fine location.</string>
+    <string name="toast_no_ar_disabled">Not yet. AR Mode needs your GPS location fixed</string>
+    <string name="toast_no_map_disabled">Not yet. Still loading Points-of-Interest</string>
+    
+    <string name="err_msg_cannot_connect">It seems your internet connection is MIA</string>
+    <string name="err_msg_connect_timeout">This is taking too long. Try again later (when the internet connection is better).</string>
+    <string name="err_msg_cannot_fetch_actions">Couldn\'t get action summary</string>
+    
+    <string name="dialog_fine_location_disabled">For better results, we need your fine location.\nDo you want to enable GPS?</string>
+    <string name="dialog_yes_button">Yeah, sure!</string>
+    <string name="dialog_no_button">Don\'t think so!</string>
+    
+    <string name="explore_btn_ar_view">View in AR mode</string>
+    <string name="explore_btn_go_back">\u003C to list mode</string>
+    
+    <string name="poi_details_progress_dialog_title">Hold on a bit...</string>
+    <string name="poi_details_progress_dialog_message">...putting things in place</string>
+    
+    <string name="poi_details_default_name_text">Place name</string>
+    <string name="poi_details_default_cat_text">Categories: </string>
+    <string name="poi_details_text_beside_stars">from user reviews</string>
+    <string name="poi_details_distance_suffix"> away</string>
+    <string name="poi_details_address_head"><b>Where is this place?</b>: </string>
+    <string name="poi_details_phone_head"><b>Phone number</b>: </string>
+    
+    <string name="poi_details_add_to_watch">+ to visit list</string>
+    
+    <string name="poi_details_options_expand">Click for options</string>
+    <string name="poi_details_options_collapse">Hide options</string>
+    <string name="poi_details_options_description">What should occur if you enter this location?</string>
+    <string name="poi_details_options_post_to_facebook">Post to Facebook</string>
+    <string name="poi_details_options_post_note_to_self">Write a note-to-self...</string>
+    <string name="poi_details_options_ringtone_volume">Change ringtone volume</string>
+    
+    <string name="poi_details_successful_add">Location has been added to Places to See</string>
+    <string name="poi_details_successful_add_facebook">\n- Facebook post</string>
+    <string name="poi_details_successful_add_note">\n- Note-to-self</string>
+    <string name="poi_details_successful_add_volume_increase">\n- Increase ringer volume</string>
+    <string name="poi_details_successful_add_volume_decrease">\n- Reduce ringer volume</string>
+    <string name="poi_details_failed_add">Something went wrong. Try later, please.</string>
+    
+    <string name="poi_action_summary_facebook">Will make a post to Facebook</string>
+    <string name="poi_action_summary_note">Will show a note-to-self:</string>
+    <string name="poi_action_summary_volume">Volume will be set to</string>
+    
+    <string name="notification_proximity_entered_text">You are now near</string>
+    <string name="notification_proximity_entered_title">Tour.ist proximity alert</string>
+    
+    <string name="proximity_service_label">Tour.ist Point-of-Interest Proximity Monitor</string>
+    <string name="proximity_service_description">Monitors the devices\' proximity from Points of Interest</string>
+    
+    <string name="about_help">
+    	<b>Usage</b>
+    	\n
+    	Tour.ist is an app that allows users visually discover their surroundings. Tour.ist has multiple
+    	modes with which to explore the surrounding area. The <i>augmented reality</i> (AR) mode allows users
+    	a real-time view of the environment with data of the POIs around them (more data coming soon).
+    	Tour.ist also has a <i>map-view</i> of the surrounding POIs. \n
+    	POIs can also be marked for visitation (this means an intention to visit a POI). Tour.ist then 
+    	anonymously monitors for when the user enters their chosen POI. The application can then trigger
+    	a set of user pre-configured actions.\n\n 
+    	Visit http://code.google.com/p/android-tourist/ for more information and for a video tutorial. 
+    </string>
+    
+    <string name="about_terms_of_service">
+    	<b>Terms Of Service</b>
+    	\n
+    	Tour.ist reserves the right to <i>anonymously</i> track your usage of this aforementioned app
+    	using Google Analytics. 
+    	\nOtherwise, do with the app what you see fit. That is all.
+    </string>
+    
+    <string name="about_attributions">
+    	<b>Attributions</b>
+    	\n
+    	Action bar icons by Joseph Wain: \n
+    	http://glyphish.com. \n
+    	Dashboard icons courtesy of: \n
+    	http://dryicons.com. \n
+    	Map icons from:\n
+    	http://mapicons.nicolasmollet.com. \n
+    </string>
+</resources>

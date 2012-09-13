@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme" parent="android:style/Theme" />
+	
+	<!-- 
+		Variation on the Light theme that turns off the title.
+		Because it inherits from Theme.Light, the ProgressBars
+		are inversed colors.
+	-->
+	
+	<style name="HelpText">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.00001</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:autoLink">all</item>
+    </style>
+    
+    <style name="Theme.Tour.IST" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/background_noise</item>
+
+        <!-- custom attributes -->
+        <item name="textHeaderMaxLines">3</item>
+        <item name="trackAbstractMaxLines">2</item>
+
+        <!-- for programmatic instantiation -->
+        <item name="actionbarCompatButtonStyle">@style/ActionBarCompatButton</item>
+        <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
+        <item name="actionbarCompatSeparatorStyle">@style/ActionBarCompatSeparator</item>
+        <item name="actionbarCompatLogoStyle">@style/ActionBarCompatLogo</item>
+        <item name="actionbarCompatTextStyle">@style/ActionBarCompatText</item>
+    </style>
+
+    <style name="ActionBarCompat">
+        <item name="android:id">@id/actionbar_compat</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_compat_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/actionbar_compat_background</item>
+    </style>
+
+    <style name="ActionBarCompatButton">
+        <item name="android:layout_width">@dimen/actionbar_compat_height</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/actionbar_compat_button</item>
+    </style>
+
+    <style name="ActionBarCompatProgressIndicator" parent="android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="ActionBarCompatSeparator">
+        <item name="android:layout_width">2px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/actionbar_compat_separator</item>
+    </style>
+
+    <style name="ActionBarCompatLogo">
+        <item name="android:id">@id/actionbar_compat_logo</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:clickable">false</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">@string/description_logo</item>
+        <item name="android:src">@drawable/actionbar_compat_logo</item>
+    </style>
+
+    <style name="ActionBarCompatText">
+        <item name="android:id">@id/actionbar_compat_text</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/action_bar_text_color</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">0.0001</item>
+        <item name="android:inputType">text</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:background">@null</item>
+    </style>
+     
+    <style name="RecommendationBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/recommend_bar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/slide_drawer_handle_background</item>
+    </style>
+    
+    <style name="RecommendationBarLoading">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">8dip</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <!-- <item name="android:textColor">#ffF0683E</item> -->
+        <item name="android:maxLines">1</item>
+    </style>
+    
+    <style name="RecommendationBarLoadingSub" parent="@style/RecommendationBarLoading">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    
+    <style name="RecommendationBarPreviousNextButtons">
+    	<item name="android:background">@color/transparent</item>
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:layout_height">wrap_content</item>
+    	<item name="android:layout_gravity">center_vertical</item>
+    	<item name="android:layout_marginLeft">8dip</item>
+    	<item name="android:layout_marginRight">8dip</item>
+    </style>
+    
+    <style name="CurvedButton" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:shadowColor">@color/button_shadow</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:background">@drawable/curved_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="PlaceIconImage">
+    	<item name="android:scaleType">center</item>
+    	<item name="android:adjustViewBounds">true</item>
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="PlaceNameText">
+    	<item name="android:textSize">@dimen/text_size_medium</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:layout_alignWithParentIfMissing">true</item>
+    	<item name="android:inputType">textMultiLine</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+    
+    <style name="PlaceNameDetailText" parent="@style/PlaceNameText">
+    	<item name="android:textSize">@dimen/text_size_large</item>  <!-- Make the text a little bigger -->
+    </style>
+    
+    <style name="PlaceDistanceText">
+    	<item name="android:textSize">@dimen/text_size_tiny</item>
+    	<item name="android:inputType">text</item>
+    	<item name="android:textStyle">italic</item>
+    	<item name="android:textColor">@color/accent</item>
+    </style>
+    
+    <style name="PlaceVicinityText" parent="@style/PlaceNameText">
+    	<item name="android:textSize">@dimen/text_size_small</item>
+    	<item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="PlaceCategoryText" parent="@style/PlaceNameText">
+    	<item name="android:textSize">@dimen/text_size_tiny</item>
+    	<item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="PlaceExtraInfo">
+    	<item name="android:textSize">@dimen/text_size_small</item>
+    	<item name="android:inputType">textMultiLine</item>
+    </style>
+    
+    <style name="ListLoadingText">
+    	<item name="android:gravity">center_vertical|center_horizontal</item>
+    	<item name="android:inputType">text</item> 						<!-- Makes it single line -->
+    	<item name="android:textSize">@dimen/text_size_small</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:textColor">@color/accent</item>
+    </style>
+    
+    <style name="ListLoadingProgressBar">
+    	<item name="android:indeterminate">true</item>
+    	<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingBottom">10dip</item>
+    	<item name="android:paddingTop">10dip</item>
+    </style>
+    
+    <style name="ViewSeparator">
+    	<item name="android:layout_marginLeft">8dip</item>
+    	<item name="android:layout_marginRight">8dip</item>
+    	<item name="android:layout_marginTop">8dip</item>
+    	<item name="android:layout_marginBottom">12dip</item>
+    	<item name="android:background">@color/accent</item>
+    </style>
+    
+    <style name="POIActionSummaryText">
+    	<item name="android:paddingLeft">8dip</item>
+    	<item name="android:paddingRight">8dip</item>
+    	<item name="android:inputType">textMultiLine</item>
+    	<item name="android:textStyle">italic</item>
+    	<item name="android:textSize">@dimen/text_size_small</item>
+    	<item name="android:visibility">gone</item>
+    </style>
+</resources>

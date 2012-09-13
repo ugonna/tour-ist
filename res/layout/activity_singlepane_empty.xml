@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Empty root container that will later contain one fragment.
+	Needed so as to add a fragment to one activity in phones.
+	Tablets have a different layout. 
+	This abstracts the basic one activity, one fragment layout
+	with the help of the BaseSinglePaneActivity class so that 
+	any activity that needs to use that basic layout can extend
+	BaseSinglePaneActivity so as to get the empty root with an
+	action bar. The extending class can then provide the fragment
+	to be added. 
+-->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/singlepane_root"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <include layout="@layout/actionbar" />
+  
+</LinearLayout>

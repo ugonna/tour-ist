@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Action summary for the POI (shown only when a POI
+  	has been added to the intended list -->
+  <ViewStub android:layout="@layout/poi_actions_summary"
+  	android:inflatedId="@+id/actionSummary"
+  	android:id="@+id/actionSummaryStub"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content" />
+  
+  <!-- Control panel for adding information on a place to visit -->
+  <LinearLayout android:id="@+id/controlPanel"
+  	android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:orientation="vertical">
+  	
+  	<TextView android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"	
+  		android:text="@string/poi_details_options_description"
+  		android:textSize="@dimen/text_size_small"
+  		android:layout_marginBottom="32dip"
+  		android:layout_marginLeft="8dip"
+  		android:layout_marginRight="8dip" />
+  	<CheckBox android:id="@+id/postToFBCheck"
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:text="@string/poi_details_options_post_to_facebook"
+  		android:textSize="@dimen/text_size_medium"
+  		android:checked="false"
+  		android:layout_marginTop="@dimen/vertical_item_separator_space"
+  		android:layout_marginLeft="8dip"
+  		android:layout_marginRight="8dip" />
+  	<EditText android:id="@+id/noteToSelf"
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:hint="@string/poi_details_options_post_note_to_self"
+  		android:minLines="3"
+  		android:layout_marginTop="@dimen/vertical_item_separator_space"
+  		android:layout_marginLeft="8dip"
+  		android:layout_marginRight="8dip" />
+  	<TextView android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"	
+  		android:text="@string/poi_details_options_ringtone_volume"
+  		android:layout_marginTop="@dimen/vertical_item_separator_space"
+  		android:layout_marginLeft="8dip"
+  		android:layout_marginRight="8dip" />
+  	<SeekBar android:id="@+id/ringtoneVolume"
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginLeft="8dip"
+  		android:layout_marginRight="8dip" />
+  </LinearLayout>
+  
+  <!-- Controls for exposing/hiding the control panel above -->
+  <RelativeLayout 
+  	android:id="@+id/exposeControls"
+  	android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_marginTop="32dip">
+  	<TextView android:id="@+id/clickableExposeText"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"	
+  		android:text="@string/poi_details_options_expand"
+  		android:textSize="@dimen/text_size_medium"
+  		android:layout_alignParentLeft="true"
+  		android:layout_marginLeft="32dip"
+  		android:layout_centerInParent="true"
+  		android:clickable="true" />
+  	<ImageButton android:id="@+id/exposeButton"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:clickable="true"
+  		android:adjustViewBounds="true"
+  		android:background="@android:color/transparent"
+  		android:src="@drawable/expander_ic_minimized"
+  		android:layout_alignParentRight="true"
+  		android:layout_marginRight="32dip"
+  		android:layout_centerInParent="true" />
+  </RelativeLayout>
+  
+  
+</merge>

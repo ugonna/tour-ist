@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ugo.android.tourmate.ui.widget.DashboardLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:orientation="vertical"
+   	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent">
+   	
+   	<Button android:id="@+id/home_btn_explore"
+       	style="@style/DashboardButton"
+       	android:text="@string/home_btn_explore"
+       	android:drawableTop="@drawable/home_btn_explore" />
+   	<Button android:id="@+id/home_btn_places"
+       	style="@style/DashboardButton"
+       	android:text="@string/home_btn_places"
+       	android:drawableTop="@drawable/home_btn_marked_places" />
+   	<Button android:id="@+id/home_btn_history"
+       	style="@style/DashboardButton"
+       	android:text="@string/home_btn_history"
+       	android:drawableTop="@drawable/home_btn_history" />
+   	<Button android:id="@+id/home_btn_settings"
+       	style="@style/DashboardButton"
+       	android:text="@string/home_btn_settings"
+       	android:drawableTop="@drawable/home_btn_settings" />
+       	
+</com.ugo.android.tourmate.ui.widget.DashboardLayout>

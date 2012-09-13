@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="actionbar_compat_height">45dp</dimen>
+	<dimen name="text_size_large">22sp</dimen>
+	<dimen name="text_size_medium">18sp</dimen>
+	<dimen name="text_size_small">14sp</dimen>
+	<dimen name="text_size_tiny">10sp</dimen>
+	<dimen name="recommend_bar_height">75dip</dimen>
+	<dimen name="vertical_item_separator_space">16dip</dimen>
+</resources>

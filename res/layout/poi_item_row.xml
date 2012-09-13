@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="?android:attr/listPreferredItemHeight"
+	android:padding="6dip" >
+	<ImageView android:id="@+id/poiIcon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="6dip"
+        android:src="@drawable/icon"
+        android:focusable="false"
+    	android:focusableInTouchMode="false"
+        style="@style/PlaceIconImage" />
+        
+    <TextView android:id="@+id/poiName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:focusable="false"
+    	android:focusableInTouchMode="false"
+    	android:layout_alignParentLeft="true"
+        style="@style/PlaceNameText" />
+    <TextView android:id="@+id/poiDistance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/poiName"
+        android:focusable="false"
+    	android:focusableInTouchMode="false"
+    	android:layout_alignParentLeft="true"
+        style="@style/PlaceDistanceText" />
+    <TextView android:id="@+id/poiVicinity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@id/poiDistance"
+        
+        android:focusable="false"
+    	android:focusableInTouchMode="false"
+    	android:layout_alignParentLeft="true"
+        style="@style/PlaceVicinityText" />
+    <ImageView android:id="@+id/statusNotification"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:visibility="invisible"
+    	android:src="@drawable/star_pending" />
+</RelativeLayout>

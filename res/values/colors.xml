@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <color name="accent">#ff0C8393</color> -->
+	<color name="action_bar_text_color">#ff0C8393</color>
+	<color name="accent">#ff000000</color>
+	<color name="button_text">#ffffffff</color>
+	<color name="button_shadow">#ff000000</color>
+	<color name="transparent">#00ffffff</color>
+	<color name="white_mask">#edffffff</color>
+</resources>

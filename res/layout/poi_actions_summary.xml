@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView android:id="@+id/actionSummaryfbText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:text="@string/poi_action_summary_facebook" style="@style/POIActionSummaryText" />
+
+	<!--Text set from code -->
+	<TextView android:id="@+id/actionSummarynoteText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		style="@style/POIActionSummaryText" />
+
+	<!--Text set from code -->
+	<TextView android:id="@+id/actionSummaryvolumeText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		style="@style/POIActionSummaryText" />
+</LinearLayout>

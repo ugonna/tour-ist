@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.ugo.android.tourmate" android:versionCode="1"
+	android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="11" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@style/Theme.Tour.IST" >
+
+		<activity android:name=".ui.HomeActivity"
+		    	  android:label="@string/app_name"
+		    	  android:icon="@drawable/actionbar_compat_logo">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ui.phone.POIDetailActivity"
+			android:label="@string/poi_detail_view_name"
+			android:configChanges="orientation|keyboardHidden">
+		</activity>
+
+		<activity android:name=".ui.phone.POIListActivity"
+			android:configChanges="orientation|keyboardHidden" android:label="@string/explore_view_name">
+		</activity>
+
+		<activity android:name=".ui.ARModeActivity" android:label="@string/camera_view_name"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape">
+		</activity>
+
+		<activity android:name=".ui.POIMapActivity" android:label="@string/poi_map_view_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+
+		<service android:name=".services.ProximityMonitorService"
+			android:enabled="true" android:logo="@drawable/icon" android:icon="@drawable/icon"
+			android:label="@string/proximity_service_label" android:description="@string/proximity_service_description">
+		</service>
+
+		<provider android:name=".providers.TourDataProvider"
+			android:authorities="com.ugo.android.tourmate.providers.tourdataprovider" />
+
+		<uses-library android:name="com.google.android.maps" />
+	</application>
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus"
+		android:required="false" />
+
+</manifest>

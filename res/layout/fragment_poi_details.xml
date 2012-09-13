@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<LinearLayout android:id="@+id/footer"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:gravity="center_horizontal"
+		android:paddingTop="10dip" android:paddingBottom="5dip">
+		
+		<!-- TODO Put in the HTML attributions from GPlaces -->
+	</LinearLayout>
+
+	<ScrollView android:id="@+id/poiDetailScroll"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:fillViewport="true" android:layout_above="@id/footer"
+		android:layout_alignParentTop="true">
+
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<RelativeLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="6dip">
+
+				<ImageView android:id="@+id/poiDetailIcon"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true" android:layout_marginLeft="6dip"
+					style="@style/PlaceIconImage" android:src="@drawable/icon" />
+				<TextView android:id="@+id/poiDetailName"
+					android:text="@string/poi_details_default_name_text"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/poiDetailIcon" style="@style/PlaceNameDetailText" />
+				<TextView android:id="@+id/poiDetailCategories"
+					android:text="@string/poi_details_default_cat_text"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/poiDetailIcon" android:layout_below="@id/poiDetailName"
+					style="@style/PlaceCategoryText" />
+			</RelativeLayout>
+			<View android:layout_width="fill_parent" android:layout_height="1dip"
+				style="@style/ViewSeparator" />
+
+			<RelativeLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingTop="6dip">
+
+				<RatingBar android:id="@+id/poiRating"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:rating="0" android:isIndicator="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentLeft="true" android:layout_marginLeft="8dip"
+					style="?android:attr/ratingBarStyleSmall" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/poiRating"
+					android:layout_marginLeft="5dip" android:text="@string/poi_details_text_beside_stars"
+					style="@style/PlaceCategoryText" />
+				<TextView android:id="@+id/poiDetailDistance"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentRight="true" android:layout_marginRight="8dip"
+					android:text="@string/poi_details_distance_suffix" style="@style/PlaceDistanceText" />
+			</RelativeLayout>
+
+			<TextView android:id="@+id/poiAddressText"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="16dip" android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip" style="@style/PlaceExtraInfo"
+				android:text="@string/poi_details_address_head" />
+			<TextView android:id="@+id/poiPhoneText"
+				android:layout_width="match_parent" android:layout_height="wrap_content"
+				android:layout_marginTop="8dip" android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip" android:autoLink="phone"
+				style="@style/PlaceExtraInfo" android:text="@string/poi_details_phone_head" />
+
+			<View android:layout_width="fill_parent" android:layout_height="1dip"
+				style="@style/ViewSeparator" />
+
+			<!-- Extra controls for the other options you can take on this forms. 
+				Default visibility of GONE -->
+			<include layout="@layout/poi_options_view" android:id="@+id/extraControls" />
+
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
